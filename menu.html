@@ -19,10 +19,20 @@
                 <a href="/"><img class="w-20" src="image/logo-01.png" alt=""></a>
             </div>
             <div class="col-span-2 pr-20 items-center flex justify-between">
-                <a class="hover:text-red-500" href="/">Trang chủ</a>
-                <a class="hover:text-red-500" href="/">Giới thiệu</a>
-                <a class="hover:text-red-500" href="/">Sản phẩm</a>
-                <a class="hover:text-red-500" href="/">Liên hệ</a>
+                <a class="hover:text-red-500" href="">Trang chủ</a>
+                <a class="hover:text-red-500" href="">Giới thiệu</a>
+                <div class="dropdown">
+                    <a class="hover:text-red-500 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                      Sản phẩm
+                    </a>
+                    <!-- <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Áo Thun</a></li>
+                      <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+                      <li><a class="dropdown-item" href="#">Quần</a></li>
+                    </ul> -->
+                </div>
+                <!-- <a class="hover:text-red-500" href="">Sản phẩm <i class="fa-solid fa-caret-down"></i></a> -->
+                <a class="hover:text-red-500" href="">Liên hệ</a>
             </div>
             <div class="col-span-2 flex justify-between border-2 border-gray-500 rounded-full mr-10">
                 <input placeholder="Nhập tên sản phẩm" type="text" class="font-medium outline-none mx-2 my-1 pl-2">
@@ -86,7 +96,7 @@
             </div>
         </div>
         <div class="flex justify-end mt-5">
-            <a href="/" class="bg-blue-500 font-bold text-white py-1 px-5">Xem thêm</a>
+            <a href="product-new.html" class="bg-blue-500 font-bold text-white py-1 px-5">Xem thêm</a>
         </div>
         <div class="mt-4">
             <span class="font-bold bg-blue-500 text-white px-4 py-1 rounded-md"><a class="transition-all duration-300 ease-in-out hover:text-black" href="/">ÁO THUN</a></span>
@@ -151,13 +161,24 @@
             <a href="/" class="bg-blue-500 font-bold text-white py-1 px-5">Xem thêm</a>
         </div>
         <div class="mt-4">
-            <span class="font-bold bg-blue-500 text-white px-4 py-1 rounded-md"><a class="transition-all duration-300 ease-in-out hover:text-black" href="/">QUẦN SORT</a></span>
+            <span class="font-bold bg-blue-500 text-white px-4 py-1 rounded-md">
+                <a class="transition-all duration-300 ease-in-out hover:text-black" href="/">QUẦN</a>
+            </span>
         </div>
         <div class="grid grid-cols-3 gap-8 mt-5">
+            <div class="col-span-1 flex justify-center items-center bg-gray-100 drop-shadow-md rounded-md hover:-mt-2 transition-all duration-300 ease-in-out">
+                <div class="text-center">
+                    <div class="flex justify-center w-96 h-96">
+                        <a href="/" class="flex"><img class="p-4 h-96 w-52" src="/image/3.png" alt=""></a>
+                    </div>
+                    <h1 class="font-bold text-lg">Quần tây âu</h1>
+                    <h1 class="text-red-500 font-bold text-lg">180.000đ</h1>
+                </div>
+            </div>
             <div class="col-span-1 flex justify-center bg-gray-100 drop-shadow-md rounded-md hover:-mt-2 transition-all duration-300 ease-in-out">
                 <div class="text-center">
-                    <div class="flex ">
-                        <a href="/"><img class="h-96 w-96 p-4" src="/image/2.png" alt=""></a>
+                    <div class="flex justify-center">
+                        <a href="/"><img class="h-96 w-52 p-4" src="/image/3.png" alt=""></a>
                     </div>
                     <h1 class="font-bold text-lg">Áo thun T-shirt</h1>
                     <h1 class="text-red-500 font-bold text-lg">180.000đ</h1>
@@ -165,17 +186,8 @@
             </div>
             <div class="col-span-1 flex justify-center bg-gray-100 drop-shadow-md rounded-md hover:-mt-2 transition-all duration-300 ease-in-out">
                 <div class="text-center">
-                    <div class="flex items-stretch">
-                        <a href="/"><img class="h-96 w-96 p-4" src="/image/2.png" alt=""></a>
-                    </div>
-                    <h1 class="font-bold text-lg">Áo thun T-shirt</h1>
-                    <h1 class="text-red-500 font-bold text-lg">180.000đ</h1>
-                </div>
-            </div>
-            <div class="col-span-1 flex justify-center bg-gray-100 drop-shadow-md rounded-md hover:-mt-2 transition-all duration-300 ease-in-out">
-                <div class="text-center">
-                    <div class="flex items-stretch">
-                        <a href="/"><img class="h-96 w-96 p-4" src="/image/2.png" alt=""></a>
+                    <div class="">
+                        <a href="/"><img class="h-96 w-52 p-4" src="/image/3.png" alt=""></a>
                     </div>
                     <h1 class="font-bold text-lg">Áo thun T-shirt</h1>
                     <h1 class="text-red-500 font-bold text-lg">180.000đ</h1>
@@ -190,7 +202,7 @@
     <div class="bg-gray-100 mt-2">
         <div class="container mx-auto px-5 py-4 grid grid-cols-5 gap-4">
             <div class="col-span-2">
-                <h1 class="font-bold mb-2">GIỚI THIỆU</h1>
+                <h1 class="font-bold mb-2" #gioithieu>GIỚI THIỆU</h1>
                 <p>
                     OuterClo được thành lập vòa năm 2023. Mục tiêu OuterClo hướng đến một local brand cho tất cả các bạn trẻ trên toàn bộ đất nước Việt Nam
                     Chúng tôi hướng đến các sản phẩm chất lượng tốt cũng như các sản phẩm cho các bạn có phong cách đơn giản
