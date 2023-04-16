@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a189e8b341.js" crossorigin="anonymous"></script>
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <div class="container mx-auto px-5 relative">
+        <div class="flex justify-between md:grid lg:grid-cols-8 md:grid-cols-6 grid-cols-3 gap-4 py-3 font-bold sticky top-0 z-10 bg-white drop-shadow-b">
+            <div class="md:hidden ">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="col-span-1  flex items-center">
+                <a href="menu.html"><img class="w-20" src="image/logo-01.png" alt=""></a>
+            </div>
+            <div class="lg:col-span-5 md:col-span-3 hidden md:flex md:flex-col lg:grid lg:grid-cols-5 lg:gap-4">
+                <div class="col-span-3 items-center flex justify-between">
+                    <a class="hover:text-red-500" href="">Trang chủ</a>
+                    <a class="hover:text-red-500" href="">Giới thiệu</a>
+                    <div class="dropdown">
+                        <a class="hover:text-red-500 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                          Sản phẩm
+                        </a>
+                        <!-- <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Áo Thun</a></li>
+                          <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+                          <li><a class="dropdown-item" href="#">Quần</a></li>
+                        </ul> -->
+                    </div>
+                    <!-- <a class="hover:text-red-500" href="">Sản phẩm <i class="fa-solid fa-caret-down"></i></a> -->
+                    <a class="hover:text-red-500" href="">Liên hệ</a>
+                </div>
+                <div class="col-span-2 flex justify-between border-2 border-gray-500 rounded-full px-2">
+                    <input placeholder="Nhập tên sản phẩm" type="text" class="font-medium outline-none w-full mx-2 my-1">
+                    <button type="submit" class=" text-xl"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="sm:col-span-2 col-span-1 flex justify-between items-center">
+                <i class="fa-solid fa-user text-xl md:hidden"></i>
+                <h1 class="md:block hidden w-3/4"><a class="hover:text-red-500" href="register.html">Đăng Ký</a>|<a class="hover:text-red-500" href="login.html">Đăng Nhập</a></h1>
+                <a href="cart.html" class="w-1/4 text-2xl"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        <div class="flex justify-between">
+            <h1 class="font-bold text-xl text-blue-700">GIỎ HÀNG</h1>
+            <div class="border-2 border-2 border-gray-500 rounded-full px-4 py-1 ">
+                <input type="text" placeholder="Nhập tên sản phẩm" class="outline-none">
+                <button type="submit" class=" text-xl"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="flex justify-between font-bold text-center mt-2">
+            <h1 class="w-1/12">STT</h1>
+            <h1 class="w-4/12">Tên sản phẩm</h1>
+            <h1 class="w-2/12">Đơn giá</h1>
+            <h1 class="w-1/12">Số lượng</h1>
+            <h1 class="w-2/12">Thành tiền</h1>
+            <h1 class="w-1/12">Thao tác</h1> 
+        </div>
+        <div class="flex justify-between mt-2 text-center items-center">
+            <h1 class="w-1/12">1</h1>
+            <div class="w-4/12 flex justify-center">
+                <img src="image/2.png" class="w-28">
+                <h1 class="flex items-center">Áo thun T-Shirt unisex kiểu dáng nam nữ sang trọng, oversize</h1>
+            </div>
+            <h1 class="w-2/12 text-red-500">180.000</h1>
+            <div class="w-1/12 flex justify-between">
+                <input type="button" value="-" class="border border-gray-500 w-1/3 py-1 text-xl">
+                <input type="text" value="1" class="text-lg w-1/3 border border-gray-500 text-center">
+                <input type="button" value="+" class="border border-gray-500 w-1/3 py-1 text-xl">
+            </div>
+            <h1 class="w-2/12 text-red-500">360.000</h1>
+            <button class="w-1/12">Xóa</button> 
+        </div>
+        <div class="flex justify-between mt-2 text-center items-center">
+            <h1 class="w-1/12">2</h1>
+            <div class="w-4/12 flex justify-center">
+                <img src="image/2.png" class="w-28">
+                <h1 class="flex items-center">Áo thun T-Shirt unisex kiểu dáng nam nữ sang trọng, oversize</h1>
+            </div>
+            <h1 class="w-2/12 text-red-500">180.000</h1>
+            <div class="w-1/12 flex justify-between">
+                <input type="button" value="-" class="border border-gray-500 w-1/3 py-1 text-xl">
+                <input type="text" value="1" class="text-lg w-1/3 border border-gray-500 text-center">
+                <input type="button" value="+" class="border border-gray-500 w-1/3 py-1 text-xl">
+            </div>
+            <h1 class="w-2/12 text-red-500">360.000</h1>
+            <button class="w-1/12">Xóa</button> 
+        </div>
+        <div class="flex justify-between mt-2 text-center items-center">
+            <h1 class="w-1/12">3</h1>
+            <div class="w-4/12 flex justify-center">
+                <img src="image/2.png" class="w-28">
+                <h1 class="flex items-center">Áo thun T-Shirt unisex kiểu dáng nam nữ sang trọng, oversize</h1>
+            </div>
+            <h1 class="w-2/12 text-red-500">180.000</h1>
+            <div class="w-1/12 flex justify-between">
+                <input type="button" value="-" class="border border-gray-500 w-1/3 py-1 text-xl">
+                <input type="text" value="1" class="text-lg w-1/3 border border-gray-500 text-center">
+                <input type="button" value="+" class="border border-gray-500 w-1/3 py-1 text-xl">
+            </div>
+            <h1 class="w-2/12 text-red-500">360.000</h1>
+            <button class="w-1/12">Xóa</button> 
+        </div>
+        <div class="flex justify-between mt-2 text-center items-center">
+            <h1 class="w-1/12">4</h1>
+            <div class="w-4/12 flex justify-center">
+                <img src="image/2.png" class="w-28">
+                <h1 class="flex items-center">Áo thun T-Shirt unisex kiểu dáng nam nữ sang trọng, oversize</h1>
+            </div>
+            <h1 class="w-2/12 text-red-500">180.000</h1>
+            <div class="w-1/12 flex justify-between">
+                <input type="button" value="-" class="border border-gray-500 w-1/3 py-1 text-xl">
+                <input type="text" value="1" class="text-lg w-1/3 border border-gray-500 text-center">
+                <input type="button" value="+" class="border border-gray-500 w-1/3 py-1 text-xl">
+            </div>
+            <h1 class="w-2/12 text-red-500">360.000</h1>
+            <button class="w-1/12">Xóa</button> 
+        </div>
+        <div class="flex justify-between mt-2 text-center items-center">
+            <h1 class="w-1/12">5</h1>
+            <div class="w-4/12 flex justify-center">
+                <img src="image/2.png" class="w-28">
+                <h1 class="flex items-center">Áo thun T-Shirt unisex kiểu dáng nam nữ sang trọng, oversize</h1>
+            </div>
+            <h1 class="w-2/12 text-red-500">180.000</h1>
+            <div class="w-1/12 flex justify-between">
+                <input type="button" value="-" class="border border-gray-500 w-1/3 py-1 text-xl">
+                <input type="text" value="1" class="text-lg w-1/3 border border-gray-500 text-center">
+                <input type="button" value="+" class="border border-gray-500 w-1/3 py-1 text-xl">
+            </div>
+            <h1 class="w-2/12 text-red-500">360.000</h1>
+            <button class="w-1/12">Xóa</button> 
+        </div>
+        <div class="flex justify-end text-2xl">
+            <h1>Tổng tiền: <b class="text-red-500">3.600.000</b></h1>
+        </div>
+        <div class="flex justify-end space-x-3 mt-2">
+            <button class="bg-red-500 text-white font-bold px-4 py-2">ĐẶT HÀNG</button>
+            <button class="bg-gray-300 font-bold px-4 py-2">HỦY BỎ</button>
+        </div>
+    </div>
+        
+    <hr class="mt-2">
+    <div class="bg-gray-100 mt-2">
+        <div class="container max-w-[1280px] mx-auto px-5 py-4 lg:grid grid-cols-5 gap-4">
+            <div class="col-span-2">
+                <h1 class="font-bold mb-2" #gioithieu>GIỚI THIỆU</h1>
+                <p>
+                    OuterClo được thành lập vòa năm 2023. Mục tiêu OuterClo hướng đến một local brand cho tất cả các bạn trẻ trên toàn bộ đất nước Việt Nam
+                    Chúng tôi hướng đến các sản phẩm chất lượng tốt cũng như các sản phẩm cho các bạn có phong cách đơn giản
+                </p>
+            </div>
+            <div class="col-span-2 mt-3 md:mt-0 space-y-2">
+                <h1 class="font-bold mb-2">THÔNG TIN LIÊN HỆ</h1>
+                <h1><b>Hotline:</b> 0796.555.975</h1>
+                <h1><b>Địa chỉ:</b> 77 Trường Chinh, Thành phố Huế</h1>
+                <h1><b>Email:</b> tinn1855@gmail.com</h1>
+                <h1><b>Fanpage:</b> <a href="/">Outer Clo</a></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
