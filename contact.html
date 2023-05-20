@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outer Clo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a189e8b341.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mx-auto px-5 relative">
+        <div class="flex justify-between md:grid lg:grid-cols-8 md:grid-cols-6 grid-cols-3 gap-4 py-3 font-bold sticky top-0 z-10 bg-white drop-shadow-b">
+            <div class="md:hidden ">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="col-span-1  flex items-center">
+                <a href="menu.html"><img class="w-20" src="image/logo-01.png" alt=""></a>
+            </div>
+            <div class="lg:col-span-5 md:col-span-3 hidden md:flex md:flex-col lg:grid lg:grid-cols-5 lg:gap-4">
+                <div class="col-span-3 items-center flex justify-between">
+                    <a class="hover:text-red-500" href="">Trang chủ</a>
+                    <a class="hover:text-red-500" href="contact.html">Giới thiệu</a>
+                    <div class="dropdown">
+                        <a class="hover:text-red-500 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                          Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Áo Thun</a></li>
+                          <li><a class="dropdown-item" href="#">Sản phẩm bán chạy</a></li>
+                          <li><a class="dropdown-item" href="#">Quần</a></li>
+                        </ul>
+                    </div>
+                    <!-- <a class="hover:text-red-500" href="">Sản phẩm <i class="fa-solid fa-caret-down"></i></a> -->
+                    <a class="hover:text-red-500" href="#lienhetuvan">Liên hệ</a>
+                </div>
+                <div class="col-span-2 flex justify-between border-2 border-gray-500 rounded-full px-2">
+                    <input placeholder="Nhập tên sản phẩm" type="text" class="font-medium outline-none w-full mx-2 my-1">
+                    <button type="submit" class=" text-xl"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="sm:col-span-2 col-span-1 flex justify-between items-center">
+                <i class="fa-solid fa-user text-xl md:hidden"></i>
+                <h1 class="md:block hidden w-3/4"><a class="hover:text-red-500" href="register.html">Đăng Ký</a>|<a class="hover:text-red-500" href="login.html">Đăng Nhập</a></h1>
+                <a href="cart.html" class="w-1/4 text-2xl"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-100">
+        <div class="container mx-auto px-5">
+            <div class="py-3">
+                <div>
+                    <!-- <h1 class="font-bold text-blue-700">GIỚI THIỆU</h1> -->
+                    <div class="flex space-x-8">
+                       <div class="w-1/2 flex items-center">
+                           <div>
+                                <h1 class="font-bold text-2xl text-[#2F6AC2]">VỀ CHÚNG TÔI</h1>
+                                <h1 class="font-bold text-2xl">SỨ MỆNH CỦA OUTERCLO</h1>
+                                <p class="">OuterClo được thành lập vào năm 2023. Mục tiêu của OuterClo hướng đến một local brand cho tất cả các bạn trẻ yêu thích phong cách đơn giản trên toàn bộ đất nước Việt Nam.
+                                    Chúng tôi hướng đến các sản có chất lượng tốt và có giá thành phù hợp với mọi người. Đặc biệt, OuterClo
+                                </p>
+                                <div class="flex space-x-2 items-center mt-2">
+                                    <i class="fas fa-check font-bold text-[#2F6AC2]"></i>
+                                    <h1 class="font-semibold">Luôn luôn lắng nghe ý kiến của khách hàng</h1>
+                                </div>
+                                <div class="flex space-x-2 items-center">
+                                    <i class="fas fa-check font-semibold text-[#2F6AC2]"></i>
+                                    <h1 class="font-semibold">Đặt uy tín lên hàng đầu</h1>
+                                </div>
+                                <div class="flex space-x-2 items-center">
+                                    <i class="fas fa-check font-semibold text-[#2F6AC2]"></i>
+                                    <h1 class="font-semibold">Đem lại trải nghiệm tốt nhất cho khách hàng</h1>
+                                </div>
+                                <div class="flex space-x-2 items-center">
+                                    <i class="fas fa-check font-semibold text-[#2F6AC2]"></i>
+                                    <h1 class="font-semibold">Tư vấn nhiệt tình</h1>
+                                </div>
+                                <div class="flex space-x-2 items-center">
+                                    <i class="fas fa-check font-semibold text-[#2F6AC2]"></i>
+                                    <h1 class="font-semibold">Đảm bảo chất lượng sản phẩm</h1>
+                                </div>
+                                <button class="mt-3 bg-[#2F6AC2] text-white py-2 px-4 font-bold rounded-md">LIÊN HỆ TƯ VẤN</button>
+                           </div>
+                       </div>
+                        <div class="w-1/2 flex justify-center">
+                            <img class="" src="/image/contact.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 mt-14">
+                <div class="col-span-1 text-center">
+                    <h1 class="text-6xl font-semibold text-[#2F6AC2]">10+</h1>
+                    <h1 class="font-semibold">Thành viên</h1>
+                </div>
+                <div class="col-span-1 text-center">
+                    <h1 class="text-6xl font-semibold text-[#2F6AC2]">50+</h1>
+                    <h1 class="font-semibold">Sản phẩm</h1>
+                </div>
+                <div class="col-span-1 text-center">
+                    <h1 class="text-6xl font-semibold text-[#2F6AC2]">10+</h1>
+                    <h1 class="font-semibold">Cửa hàng</h1>
+                </div>
+                <div class="col-span-1 text-center">
+                    <h1 class="text-6xl font-semibold text-[#2F6AC2]">99%</h1>
+                    <h1 class="font-semibold">Độ tin cậy</h1>
+                </div>
+            </div>
+            <div class="mt-14 text-center">
+                <h1 class="font-bold text-2xl text-[#2F6AC2]">SẢN PHẨM CHẤT LƯỢNG CAO</h1>
+                <h1 class="text-2xl font-semibold">OuterClo xây dựng đội ngũ chuyên nghiệp, quy trình sản xuất nghiêm ngặt</h1>
+                <p class="px-20">
+                    OuterClo cam kết phát triển bền vững bằng cách tạo ra các sản phẩm có chất lượng cao, thái độ phục vụ thân thiện, chuyên nghiệp. Bên cạnh đó Outer không ngừng đổi mới
+                    để đem ra những sản phẩm hot nhất trên thị trường
+                </p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
+                <div class="col-span-1 flex justify-center bg-gray-100 drop-shadow-md rounded-md hover:-mt-2 transition-all duration-300 ease-in-out">
+                    <div class="text-center">
+                        <div class="flex items-stretch">
+                            <a href="/"><img class="p-4" src="/image/2.png" alt=""></a>
+                        </div>
+                        <h1 class="font-bold text-lg">Áo thun T-shirt</h1>
+                    </div>
+                </div>
+                <div class="col-span-1 flex justify-center bg-gray-100 drop-shadow-md rounded-md hover:-mt-2 transition-all duration-300 ease-in-out">
+                    <div class="text-center">
+                        <div class="flex items-stretch">
+                            <a href="/"><img class="p-4" src="/image/2.png" alt=""></a>
+                        </div>
+                        <h1 class="font-bold text-lg">Áo thun T-shirt</h1>
+                    </div>
+                </div>
+                <div class="col-span-1 flex justify-center bg-gray-100 drop-shadow-md rounded-md hover:-mt-2 transition-all duration-300 ease-in-out">
+                    <div class="text-center">
+                        <div class="flex items-stretch">
+                            <a href="/"><img class="p-4" src="/image/2.png" alt=""></a>
+                        </div>
+                        <h1 class="font-bold text-lg">Áo thun T-shirt</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-14 text-center">
+                <h1 class="font-bold text-2xl text-[#2F6AC2]">DỊCH VỤ CỦA CHÚNG TÔI</h1>
+                <h1 class="text-2xl font-semibold">Đảm bảo mọi tiêu chuẩn chất lượng - Các giải pháp cho chất lượng hoàn hảo</h1>
+                <p class="px-20">
+                    Với đội ngũ cán bộ, chuyên viên có trình độ cao, kinh nghiệm lâu năm, tinh thần trách nhiệm trong công việc. 
+                    Chúng tôi sẽ cung cấp các sản phẩm có chất lượng cao cũng như giá thành cực kì hợp lý.
+                </p>
+            </div>
+            <div class="flex space-x-5 mt-4">
+                <div class="w-1/3 border-2 py-20 px-4 rounded-xl text-center ">
+                    <i class="fas fa-network-wired text-3xl text-[#2F6AC2]"></i>
+                    <h1 class="font-bold text-[#2F6AC2] ">NHƯỢNG QUYỀN THƯƠNG HIỆU</h1>
+                    <p>OuterClo là thương hiệu thời trang đến từ Việt Nam. Hệ thống cửa hàng của OuterClo đã có mặt nhiều nơi trên đất nước</p>
+                </div>
+                <div class="w-1/3 border-2 py-20 px-4 rounded-xl text-center ">
+                    <i class="fas fa-network-wired text-3xl text-[#2F6AC2]"></i>
+                    <h1 class="font-bold text-[#2F6AC2] ">CUNG CẤP SẢN PHẨM</h1>
+                    <p>OuterClo chuyên cung cấp các sản phẩm cho các đại lý, cửa hàng lớn và nhỏ trên toàn bộ nước Việt Nam</p>
+                </div>
+                <div class="w-1/3 border-2 py-20 px-4 rounded-xl text-center ">
+                    <i class="fas fa-network-wired text-3xl text-[#2F6AC2]"></i>
+                    <h1 class="font-bold text-[#2F6AC2] ">SẢN XUẤT SẢN PHẨM</h1>
+                    <p>Bên cạnh đó, OuterClo còn cung cấp dịch vụ sản xuất sản phẩm theo yêu cầu của khách hàng và các các đại lý, cửa hàng trên toàn bộ nước Việt Nam</p>
+                </div>
+            </div>
+            <div class="mt-14 pb-5" id="lienhetuvan">
+                <div class="text-center">
+                    <h1 class="font-bold text-2xl text-[#2F6AC2]">LIÊN HỆ TƯ VẤN</h1>
+                <h1 class="text-2xl font-semibold">Bạn đang thắc mắc? Hãy cho chúng tôi biết và bắt đầu ngay lập tức</h1>
+                <p class="px-20">
+                   Gửi email cho chúng tôi đến <b>outer.clothing@gmail.com</b> hoặc điền vào mẫu liên hệ. Chúng tôi sẽ trả lời bạn trong vòng 24h
+                </p>
+                </div>
+                <div class="flex justify-center">
+                    <form action="" class="mt-3">
+                        <div class="">
+                            <h1 class="font-semibold">Thông tin liên lạc của bạn:</h1>
+                            <input placeholder="Hãy nhận email hoặc số điện thoại của bạn" type="text" class="border-gray-500 border rounded-md outline-none px-2 py-2 w-full mt-2">
+                        </div>
+                        <div class="mt-3">
+                            <h1 class="font-semibold">Nội dung bạn muốn truyền tải đến chúng tôi:</h1>
+                            <!-- <input type="text" class="border-gray-500 border rounded-md outline-none px-2 py-2 w-1/3 mt-2"> -->
+                            <textarea class="rounded-md px-2 outline-none py-2" cols="70" rows="10"></textarea>
+                        </div>
+                        <div class="mt-3">
+                            <h1 class="font-semibold">Chúng tôi thực sự rất vui mừng khi tiếp nhận thông tin của bạn</h1>
+                            <!-- <input type="text" class="border-gray-500 border rounded-md outline-none px-2 py-2 w-1/3 mt-2"> -->
+                            <input type="submit" class="border-gray-500 border bg-[#2F6AC2] text-white font-bold rounded-md outline-none px-2 py-2 w-full mt-2">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="mt-2">
+    <div class="bg-gray-100 mt-2">
+        <div class="container mx-auto px-5 py-4 grid grid-cols-5 gap-4">
+            <div class="col-span-2">
+                <h1 class="font-bold mb-2" id="gioithieu">GIỚI THIỆU</h1>
+                <p>
+                    OuterClo được thành lập vòa năm 2023. Mục tiêu OuterClo hướng đến một local brand cho tất cả các bạn trẻ trên toàn bộ đất nước Việt Nam
+                    Chúng tôi hướng đến các sản phẩm chất lượng tốt cũng như các sản phẩm cho các bạn có phong cách đơn giản
+                </p>
+            </div>
+            <div class="col-span-1 flex flex-col space-y-2">
+                <h1 class="font-bold mb-2" id="lienhe">THÔNG TIN LIÊN HỆ</h1>
+                <h1><b>Hotline:</b> 0796.555.975</h1>
+                <h1><b>Địa chỉ:</b> 77 Trường Chinh, Thành phố Huế</h1>
+                <h1><b>Email:</b> tinn1855@gmail.com</h1>
+                <h1><b>Fanpage:</b> <a href="/">Outer Clo</a></h1>
+            </div>
+            <div class="col-span-2 flex items-center justify-center space-x-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.2798331940526!2d107.60094687480765!3d16.461362284276284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a11476e63bc3%3A0xcc64715fd14bf87c!2zNzcgVHLGsOG7nW5nIENoaW5oLCBBbiDEkMO0bmcsIFRow6BuaCBwaOG7kSBIdeG6vywgVGjhu6thIFRoacOqbiBIdeG6vywgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1683349170464!5m2!1sen!2s" 
+                width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
